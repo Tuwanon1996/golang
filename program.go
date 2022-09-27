@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"gobasic/calculator"
+)
 
-type Porduct struct {
-	name     string
-	price    float64
-	category string
-	discount int
-}
+// type Porduct struct {
+// 	name     string
+// 	price    float64
+// 	category string
+// 	discount int
+// }
 
 func main() {
 	// var name string
@@ -19,7 +22,8 @@ func main() {
 	// var size = len(number)
 	// fmt.Println(number, " Size ", size)
 	// fmt.Println(number[:2], " Size ", size)
+	// product := Porduct{name: "pen", price: 10.5, category: "ssss", discount: 5}
+	// fmt.Println(product.name)
+	fmt.Println(calculator.Add(10, 20))
 
-	product := Porduct{name: "pen", price: 10.5, category: "ssss", discount: 5}
-	fmt.Println(product.name)
 }
